@@ -12,7 +12,7 @@ data_filter<-data[data$Date %in% c("1/2/2007","2/2/2007") ,]
 
 # Create the variable DateTime with the Date/Time in appropriate format
 
-data_filter$DateTime <- strptime(paste(data_filter$Date, data_filter$Time, sep=" "), "%d/%m/%Y %H:%M:%S", tz="America/Los_Angeles") 
+data_filter$DateTime <- strptime(paste(data_filter$Date, data_filter$Time, sep=" "), "%d/%m/%Y %H:%M:%S") 
 attach(data_filter)
 
 ## Creation of the plot
